@@ -19,4 +19,4 @@ def index():
 
 if __name__ == '__main__':
     app.secret_key = 'Aizenka App Key'
-    app.run(debug=True)
+    app.run()
