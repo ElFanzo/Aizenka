@@ -7,7 +7,6 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        global answers
         answers = []
         for i in range(1, 58):
             answers.append(request.form['quest%s' % str(i).zfill(2)])
