@@ -1,10 +1,6 @@
 def get_questions():
-    f = open("questions.txt")
-    questions = f.readlines()
-
-    f.close()
-
-    return questions
+    with open("questions.txt") as f:
+        return f.readlines()
 
 
 def get_result(answers: list):
